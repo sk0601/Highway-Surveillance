@@ -9,6 +9,7 @@ different types of varying lengths. The system consists of the following importa
 subsystems: Detecting the speed of the vehicle taking the input image, calculating
 threshold value of the binary image, number plate area, Segmentation, Recognition.
 
+
 ## Methodology
 1. Speed Detection:   We used two IR sensors which can put at a known distance from each other.
 When the car passes through first IR module it will become in high state and
@@ -20,6 +21,7 @@ to calculate the speed using Arduino code.
 through a COM Port which makes the serial event handler to open the camera
 and to capture the image of the number plate. And number plate can be
 recognized using DIGITAL IMAGE PROCESSING TOOLBOX.
+
 
 ## Implementation
 The selected image is pre-processed by passing it over gray scale filter and edge
@@ -40,3 +42,26 @@ enhanced by applying contrast extension and median filtering techniques. So, the
 contrast differences between images and the noises such as dirty regions in white
 background of the plate can be eliminated. The main concept behind this is the accuracy
 of correlation function.
+
+
+## Conclusion
+An easy technique for vehicle speed detection and number plate recognition is presented.
+The images that have been tested were of various backgrounds, illuminations, colors as
+well as of different lengths. The experiments proved that the number plates were
+recognized more accurately when the images were cropped. Overall, the entire system
+that we developed worked convincingly.
+
+
+## References
+• J.S. Chittode and R. Kate, “Number plate recognition using segmentation,”
+ International Journal of Engineering Research & Technology, Vol. 1 Issue 9, November- 2012.
+ 
+• H. Peng, F. Long and Z. Chi, “Document image recognition based on template matching of
+component block projections,” IEEE transaction on Pattern Analysis and machine Intelligence,
+Vol. 25, no. 9, pp 1188-1192, sep 2003.
+
+• Hao Chen, Jisheng Ren, Huachun Tan, Jianqun Wang, “ A novel method for license plate localization”,
+4th Proc. of ICIG 2007, pp. 604-609.
+
+• Serkan Ozbay, Ergun Ercelebi, “Automatic vehicle identification by plate recognition”, Proc. of
+PWASET, vol. 9, no. 4, 2005, pp. 222-225
